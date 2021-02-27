@@ -1,0 +1,45 @@
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    li {
+        float: left;
+        margin-left: 10px;
+        position: relative;
+    }
+    
+    span {
+        color: #153755;
+        display: block;
+        font-weight: bold;
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    li:nth-child(even) {
+        transform: rotate(5deg);
+    }
+    
+    li:nth-child(odd) {
+        transform: rotate(-5deg);
+    }
+    
+    li:hover {
+        transform: scale(1.3);
+        z-index: 1;
+    }
+    
+    li {
+        transition: transform 0.2s linear;
+    }
+    /* li {
+        transform: skew(10deg, 10deg);
+    } */
+    /* li:nth-child(even) {
+        transform: translateY(10px);
+    }
+    
+    li:nth-child(odd) {
+        transform: translateY(-10px);
+    } */

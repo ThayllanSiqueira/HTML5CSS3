@@ -1,0 +1,8 @@
+* Pesquisar o que é reppaint de pagina html.
+
+* Ajustes com clearfix (Corrigir alturas para blocos com float)
+
+*Flex box CSS
+
+* A conversão de tamanhos xos para ?uídos é feita com base em uma fórmula
+bastante simples: "tamanho fixo"/ "contexto"= "tamanho fluído"

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pseudo-Elementos</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+
+
+<body>
+    <p>A Caelum tem os melhores cursos!</p>
+    <br><br>
+    <a href="http://www.cleversystems.com.br">Link1</a>
+    <a href="...">Link2</a>
+    <a href="...">Link3</a>
+
+    <style>
+    /* Pseudo-Elementos */
+        /* first-letter e first-line */
+        
+        p::first-letter {
+            font-size: 200%;
+        }
+        
+        p::first-line {
+            font-style: italic;
+        }
+        /* after e before */
+        
+        a:before {
+            content: '[	';
+        }
+        
+        a:after {
+            content: '	]';
+        }
+        
+        a [href^=http://]:after	{
+        content: '	(externo)';
+    }
+    </style>
+</body>
+
+</html>

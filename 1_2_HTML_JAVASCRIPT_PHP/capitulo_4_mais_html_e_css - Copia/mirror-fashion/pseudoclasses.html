@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pseudo-Classes</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+
+
+<body>
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+        <li>Quarto item</li>
+    </ul>
+    <br><br>
+    <a href="">Testando o :hover</a>
+    <style>
+        /* Pseudo-Classe (first-child e last-child) */
+        
+        li:first-child {
+            color: red;
+        }
+        
+        li:last-child {
+            color: blue;
+        }
+        /* NTH-CHILD  */
+        /* TERCEIRO ELEMENTO */
+        
+        li:nth-child(3) {
+            color: yellow;
+        }
+        /*	elementos	pares	*/
+        
+        li:nth-child(2n) {
+            color: green;
+        }
+        /*	elementos	impares	*/
+        
+        li:nth-child(2n+1) {
+            color: blue;
+        }
+        /* Pseudo-Classe de Estado */
+        /*	seleciona	o	link	no	exato	momento	em	que	passamos	o	mouse	por	cima	dele	*/
+        
+        a:hover {
+            background-color: #FF00FF;
+        }
+        /*	seleciona	todas	as	âncoras	que	têm	o	atributo	"href",	ou	seja,	links	*/
+        
+        a:link {
+            background-color: #FF0000;
+        }
+        /*	seleciona	todos	os	links	cujo	valor	de	"href"	é	um	endereço	já	visitado	*/
+        
+        a:visited {
+            background-color: #00FF00;
+        }
+        /*	seleciona	o	link	no	exato	momento	em	que	clicamos	nele	*/
+        
+        a:active {
+            background-color: #0000FF;
+        }
+    </style>
+</body>
+
+</html>
